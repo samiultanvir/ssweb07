@@ -1,0 +1,70 @@
+*{margin: 0;padding: 0}
+.main_part{
+    background-color: aliceblue
+}
+.nav_bar{
+    min-height: 55px;
+    background-color: dodgerblue;
+}
+.nav_bar ul{
+    list-style-type: none
+}
+.nav_bar ul li{
+    float:left;
+    border-left: 1px solid white;
+    position: relative}
+.nav_bar ul li:first-child{
+    border-left: none
+}
+.nav_bar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 18px 114px;
+    display: block}
+.nav_bar ul li a:hover{
+    background-color: deepskyblue;
+}
+
+
+/* Dropdown menu css */
+
+.nav_bar ul li ul{background-color: dodgerblue;position: absolute;left: -99999px;z-index: 1}
+.nav_bar ul li:hover ul{left: 0}
+.nav_bar ul li ul li{float: none;border-left: none}
+.nav_bar ul li ul li:last-child{border-bottom: none}
+.nav_bar ul li ul li a{border-bottom: 1px solid white;}
+.nav_bar ul li ul li a:hover{}
+.nav_bar ul li ul{}
+
+
+/* image gallery design */
+.image_gallery{width: 260px;
+    height: 275px;
+    border: 3px solid dodgerblue;
+    margin: 20px 90px;
+    float: left;
+    background-color: white;
+    overflow: hidden;
+   
+    
+}
+.image_gallery img{height: 220px;
+    width: 220px;    
+    padding: 12px 20px;
+    opacity: 0.7;
+    transition :1s;
+   position: absolute;
+    z-index: 0;
+   
+ 
+    
+   
+}
+.image_gallery img:hover{
+    opacity: 1;
+    transform: scale(1.06);
+    
+    
+}
+.image_gallery p{text-align: center;font-family: sans-serif;
+margin-top: 245px;font-weight: bold;color: dimgray}
